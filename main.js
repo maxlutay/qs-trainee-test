@@ -151,7 +151,7 @@ var Game = (function( _squareSize,_canvasName,_squaresNumber,_minspeed,_maxspeed
 
 
 
-_public = {
+var _public = {
     run : function() {
         if(!running){
             running = true;
