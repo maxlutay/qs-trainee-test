@@ -59,10 +59,10 @@ function randomHexColor(){
 
 
 
-var Game = (function( _squareSize,_canvasName,_squaresNumber,_minspeed,_maxspeed,_color ){
+var Game = (function( _squareSize,_canvas,_squaresNumber,_minspeed,_maxspeed,_color ){
 
-    var canvas = vDOM.canvas || d.querySelector(_canvasName);
-    var squareSize = _squareSize || 20;
+    var canvas = _canvas;
+    var squareSize = _squareSize ;
     var squaresNumber = _squaresNumber || 25 ;
 
     var ctx = canvas.getContext("2d");
@@ -184,7 +184,7 @@ var Res = function(){};
 Res.prototype = _public;
 return Res;
 
-})(30,null,50);
+})(30,vDom.canvas,50);
 
 
 
