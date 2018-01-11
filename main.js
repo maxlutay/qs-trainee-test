@@ -184,7 +184,7 @@ var Res = function(){};
 Res.prototype = _public;
 return Res;
 
-})(30,vDom.canvas,50);
+})(30,vDOM.canvas,50);
 
 
 
