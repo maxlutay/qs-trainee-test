@@ -53,7 +53,7 @@ function  random(from,to,acc){//acc i.e. accuracy after dot
 
 
 function randomHexColor(){
-    return  "#" +  random(0,Math.pow(16,6) - 1,0).toString(16);
+    return  "#" +  ("00000" + random(0,Math.pow(16,6) - 1,0).toString(16) ).slice(-6);
 };
 
 
